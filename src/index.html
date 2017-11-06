@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/894fa6f151.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Agency</title>
+</head>
+
+<body>
+    <header>
+        <nav class="fixed-top">
+                <div class="bootstrap">
+                    Start Bootstrap
+                </div>
+                <button type="button" class="navbar-collapsed" onclick="expander()">
+                    MENU
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links">
+                    <li>
+                        SERVICES
+                    </li>
+                    <li>
+                        PORTFOLIO
+                    </li>
+                    <li>
+                        ABOUT
+                    </li>
+                    <li>
+                        TEAM
+                    </li>
+                    <li>
+                        CONTACT
+                    </li>
+                </ul>
+        </nav>
+        <div class="responsive-bar">
+                     <ul class="responsive-links show" id="expander">
+                        <li>
+                            SERVICES
+                        </li>
+                        <li>
+                            PORTFOLIO
+                        </li>
+                        <li>
+                            ABOUT
+                        </li>
+                        <li>
+                            TEAM
+                        </li>
+                        <li>
+                            CONTACT
+                        </li>
+                    </ul>
+           </div>
+        
+    </header>
+    <div class="landing-page">
+        <div class="home-content">
+            <div class="intro">
+                Welcome To Our Studio!
+            </div>
+            <div class="greeting">
+                IT'S NICE TO MEET YOU
+            </div>
+            <div class="tell-me">
+                TELL ME MORE
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function expander(){
+        document.getElementById('expander').classList.toggle("show")
+    }
+</script>
